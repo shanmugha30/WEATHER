@@ -1,0 +1,101 @@
+html{
+    box-sizing: border-box;
+    font-family: 'Brush Script MT',cursive;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+    background-color: aqua;
+    text-align: center;
+}
+
+.main-container{
+    background-image: linear-gradient(to bottom, yellow , white);;
+    width: 400px;
+    height: 500px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 5px 30px 10px rgba(0, 0, 0, 0.7);
+}
+#form div{
+    margin: 20px;
+}
+input,button{
+    border: 1px solid black;
+    width: 80%;
+    height: 35px;
+    text-align: center;
+    border-radius: 8px;
+    font-family: cursive;
+}
+img{
+    border-radius: 25px;
+}
+button{
+    background-color: orangered;
+    height: 40px;
+    cursor: pointer;
+}
+
+.main-container h1{
+    border-bottom: 2px solid black;
+}
+
+.clouds-condition{
+    border-bottom: 2px solid red;
+}
+.fa,.fas{
+    color: red;
+}
+
+/*sub-container*/
+.sub-container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sub-container div{
+    width: 100px;
+    height: 70px;
+    font-size: 1rem;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #e7e7e7;
+    transition: width 2s, height 4s,font-size 1s;
+}
+
+.sub-container div:hover{
+    font-size: 1.5rem;
+    width: 200px;
+    height: 100px;
+    background-color: aquamarine;
+    color: red;
+}
+
+.city-info,.clouds-condition{
+    color: black;
+    font-size: 1.5rem;
+    border:0px solid black;
+    transition: border 1s,font-size 1s,color 1s;
+}
+.city-info:hover,.clouds-condition:hover{
+    color: orchid;
+    font-size: 2rem;
+    border:2px solid black;
+}
+
+/*relative=main-container*/
+#relative{
+    margin-left: -400px;
+}
+
+input:valid{
+    border: 1px solid green;
+}
+

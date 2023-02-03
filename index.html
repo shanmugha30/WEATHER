@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather WebPage</title>
+</head>
+<body>
+    <section>
+        <!----In maincontiner we will have information regarding city,clouds conition-->
+        <div class="main-container" id="info-container">
+            <h1><span><i class="fa fa-cloud" ></i></span> Weather App <span><i class="fa fa-cloud" ></i></span></h1> 
+            <form id="form">
+                <div>
+                    <img src="clouds.jpg" height="150px" >
+                </div>
+            </form>
+            <h3 class="city-info"><span><i class="fa fa-location-dot"></i></span>Tirupathi,India</h3>
+            <h3 class="clouds-condition"><span><i class='fas fa-cloud-moon-rain'></i></span>Overcast,Rainfall</h3>
+            <!--we will have information like temperature,humidity in subcontainer-->
+            <div class="sub-container">
+                <!---temperature---->
+                <div class="temperature">
+                    <i class="fa fa-temperature-three-quarters"></i>
+                    <span class="temp-num">17</span>
+                    <span>°</span>C
+                    <p>Feels like</p>
+                </div>
+
+                <!---Humidity---->
+                <div class="humidity">
+                    <i class="fa fa-droplet"></i>
+                    <span class="humid-num">84</span>
+                    <span>%</span>
+                    <p>humidity</p>
+                </div>
+            </div>    
+        </div>
+    </section>
+
+
+    <div class="main-container" id="relative">
+        <h1><span><i class="fa fa-cloud" ></i></span> Weather App <span><i class="fa fa-cloud" ></i></span></h1> 
+        <form id="form">
+            <div>
+                <img src="clouds.jpg" height="150px" >
+            </div>
+            <div class="country">
+                <p id="valid">please enter valid city name</p>
+                <input type="text" placeholder="ENTER NAME OF PLACE" id="country">
+            </div>
+            <!----button to get geolocation---->
+            <div>
+                <button id="getLocation">Get Device Location</button>
+            </div>
+            <!----submit button---->
+            <div>
+                <button type="submit">SUBMIT</button>
+            </div>
+            
+        </form>
+    </div>
+
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
